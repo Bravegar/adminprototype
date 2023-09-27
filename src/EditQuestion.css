@@ -1,13 +1,25 @@
 form{
-    min-width: 200px;
+    min-width: 100px;
     display:inline-block;
+    position:relative;
 }
 
 form input{
     float: right;
+    
 }
 
 form label{
     display:block;
     margin-bottom: 2px;
+    
+}
+form select{
+    float: right;
+}
+.error{
+    color:red;
+    font-size:20px;
+    margin-top:5px;
+    margin-bottom:5px;
 }

@@ -8,7 +8,7 @@ const generateCardArr = () =>{
         generatedObj.questionImg = "./somewhere";
         generatedObj.answer = "Its good for you";
         generatedObj.answerImg = "./somewhereElse";
-        generatedObj.type = "Q/A";
+        generatedObj.type = "normal";
         generatedObj.category = "B1";
         generatedObj.chapter = "Chapter 1";
         generatedObj.references = "Ref 1";
