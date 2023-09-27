@@ -45,7 +45,7 @@ const EditQuestion = ({getItem, editQuestion,getNextId,addQuestion}) => {
                 answers.push(
                 <div key={i} className="list-group">
                     
-                    <input className="list-group-item" value={currentItem.answer.split('|')[i]} onChange={(e)=>handleAnswerChange(e.target.value,i)} />
+                    <input type="text" className="list-group-item" value={currentItem.answer.split('|')[i]} onChange={(e)=>handleAnswerChange(e.target.value,i)} />
                     
                 </div>)
             }
@@ -159,21 +159,21 @@ const EditQuestion = ({getItem, editQuestion,getNextId,addQuestion}) => {
                     {errors.qaQuestion && <span className="error">{errors.qaQuestion}</span>}
                     <label className="list-group-item">
                         Question: 
-                        <input value={currentItem.question} onChange={(e)=>setCurrentItem(item=>({...item,question:e.target.value}))} />
+                        <input type="text" value={currentItem.question} onChange={(e)=>setCurrentItem(item=>({...item,question:e.target.value}))} />
                     </label>
                     <label className="list-group-item">
                         Question Img: 
-                        <input value={currentItem.questionImg} onChange={(e)=>setCurrentItem(item=>({...item,questionImg:e.target.value}))} />
+                        <input type="text" value={currentItem.questionImg} onChange={(e)=>setCurrentItem(item=>({...item,questionImg:e.target.value}))} />
                     </label>
                     
                     {errors.qaAnswer && <span className="error">{errors.qaAnswer}</span>}
                     <label className="list-group-item">
                         Answer: 
-                        <input value={currentItem.answer} onChange={(e)=>setCurrentItem(item=>({...item,answer:e.target.value}))} />
+                        <input type="text" value={currentItem.answer} onChange={(e)=>setCurrentItem(item=>({...item,answer:e.target.value}))} />
                     </label>
                     <label className="list-group-item">
                         Answer Img:
-                        <input value={currentItem.answerImg} onChange={(e)=>setCurrentItem(item=>({...item,answerImg:e.target.value}))} />
+                        <input type="text" value={currentItem.answerImg} onChange={(e)=>setCurrentItem(item=>({...item,answerImg:e.target.value}))} />
                     </label>
                 </div>
             }
@@ -183,12 +183,12 @@ const EditQuestion = ({getItem, editQuestion,getNextId,addQuestion}) => {
                     {errors.fiQuestionReq && <span className="error">{errors.fiQuestionReq}</span>}
                     <label className="list-group-item">
                         Question: 
-                        <input value={currentItem.question} onChange={(e)=>{setCurrentItem(item => ({...item,question:e.target.value}));
+                        <input type="text" value={currentItem.question} onChange={(e)=>{setCurrentItem(item => ({...item,question:e.target.value}));
                     }} />
                     </label>
                     <label className="list-group-item">
                         Question Img:
-                        <input value={currentItem.questionImg} onChange={(e)=>setCurrentItem(item=>({...item,questionImg:e.target.value}))} />
+                        <input type="text" value={currentItem.questionImg} onChange={(e)=>setCurrentItem(item=>({...item,questionImg:e.target.value}))} />
                     </label>
                     {errors.fiAnswer && <span className="error">{errors.fiAnswer}</span>}
                     <label className="list-group-item">
@@ -200,11 +200,11 @@ const EditQuestion = ({getItem, editQuestion,getNextId,addQuestion}) => {
             }
             <label className="list-group-item">
                 Chapter: 
-                <input value={currentItem.chapter} onChange={(e)=>setCurrentItem(item=>({...item,chapter:e.target.value}))}/>
+                <input type="text" value={currentItem.chapter} onChange={(e)=>setCurrentItem(item=>({...item,chapter:e.target.value}))}/>
             </label>
             <label className="list-group-item">
                 References: 
-                <input value={currentItem.references} onChange={(e)=>setCurrentItem(item=>({...item,references:e.target.value}))}/>
+                <input type="text" value={currentItem.references} onChange={(e)=>setCurrentItem(item=>({...item,references:e.target.value}))}/>
             </label>
         
             
@@ -214,14 +214,9 @@ const EditQuestion = ({getItem, editQuestion,getNextId,addQuestion}) => {
             <button type="submit" className="btn btn-primary" >
             Submit
             </button>
-            
-            
-            
-            
-            
-                        
-        </form>
-        </div>
+                          
+            </form>
+            </div>
         </div>
     )
 }

@@ -38,7 +38,7 @@ function App() {
         <Routes>
           <Route path ="/" element={
             <div className="card" >
-              <div className="card-header">
+              <div className="card-header bg-secondary text-light">
                 <h2>Question List</h2>
                 <Link to="/add" className="btn btn-primary">
                     Add Question
