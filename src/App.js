@@ -26,7 +26,7 @@ function App() {
   }
   
   const getNextAvailableId =()=>{
-    return questionList.length-1;
+    return questionList.length;
   }
   const getItemById = (id) => {
     const requestedItem = questionList.find((item)=>id == item.id);
